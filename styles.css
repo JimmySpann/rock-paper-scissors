@@ -9,7 +9,7 @@ body {
 .stadium {
   height: 550px;
   width: 800px;
-  background-image: url("/images/stadium.jpg");
+  background-image: url("./images/stadium.jpg");
   background-size: cover;
 }
 

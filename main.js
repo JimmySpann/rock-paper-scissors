@@ -44,13 +44,13 @@ function decideWinner(playerChoice, enemyChoice){
     }, 100)
 }
 
-const handArray = ["/images/rock.png", "/images/paper.png", "/images/scissors.png"]
+const handArray = ["./images/rock.png", "./images/paper.png", "./images/scissors.png"]
 const sounds = {
-    bgMusic: new Audio('/sounds/we-will-rock-you.mp3'),
+    bgMusic: new Audio('./sounds/we-will-rock-you.mp3'),
     crowd: {
-        boo: new Audio('/sounds/crowd-boo.mp3'),
-        cheer: new Audio('/sounds/crowd-cheer.mp3'),
-        aww: new Audio('/sounds/crowd-aww.mp3')
+        boo: new Audio('./sounds/crowd-boo.mp3'),
+        cheer: new Audio('./sounds/crowd-cheer.mp3'),
+        aww: new Audio('./sounds/crowd-aww.mp3')
     }
 }
 
