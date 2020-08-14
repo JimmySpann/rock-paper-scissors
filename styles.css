@@ -1,5 +1,51 @@
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
+body {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.stadium {
+  height: 550px;
+  width: 800px;
+  background-image: url("/images/stadium.jpg");
+  background-size: cover;
+}
+
+.logo-container {
+  margin: 0 auto;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  animation: rotate 8s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(720deg);
+  }
+}
+
+.briefing {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  height: 70px;
+}
+
+.game-buttons {
+  margin: 50px 0 0 20px;
+}
 
 .roundbtn {
   margin-right: 20px;
@@ -130,37 +176,19 @@
     height: 50px;
 }
 
-.logo-container {
-    width: 150px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-.logo {
-    height: 100px;
-    width: 100px;
-    animation: rotate 8s infinite linear;
-}
-
-@keyframes rotate {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(720deg);
-    }
-  }
 
   .hands {
-      display: flex;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
   }
 
   .player-hand {
-    margin: 50px 0 0 50px;
     height: 150px;
     width: 150px;
-}
+    margin-right: 150px;
+  }
 
   .player-hand.move {
     animation: playerMove 100ms infinite alternate;
@@ -180,7 +208,6 @@
   }
 
   .enemy-hand {
-    margin: 50px 0 0 50px;
     height: 150px;
     width: 150px;
     transform: rotateY(180deg);
@@ -198,3 +225,19 @@
         transform: translate(15px,-30px) rotateY(180deg);
     }
   }
+
+  .before-game {
+    width: 100%;
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .start-btn {
+    margin: 0 auto;
+  }
+
+.hide {
+  display: none;
+}
