@@ -44,7 +44,7 @@ function decideWinner(playerChoice, enemyChoice){
     }, 100)
 }
 
-const handArray = ["./images/rock.png", "./images/paper.png", "./images/scissors.png"]
+const handArray = ["./images/Rock.png", "./images/Paper.png", "./images/Scissors.png"]
 const sounds = {
     bgMusic: new Audio('./sounds/we-will-rock-you.mp3'),
     crowd: {
